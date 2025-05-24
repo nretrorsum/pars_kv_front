@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import RealEstateAnalytics from './components/Analytics'
 import Test from './components/Test'
 import Header from './components/Header'
+import TestRealEstateAnalytics from './components/Test_Analytics'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<RealEstateAnalytics />} />
           <Route path="/analytics" element={<RealEstateAnalytics />} />
+          <Route path="/test_analytics" element={<TestRealEstateAnalytics />} />
           <Route path="/test" element={<Test />} />
           <Route path="/sales" element={
             <div className="text-white p-8 h-full">Сторінка продажу (в розробці)</div>
